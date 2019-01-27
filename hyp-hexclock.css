@@ -1,0 +1,55 @@
+
+@import url('https://fonts.googleapis.com/css?family=Averia+Libre|Comfortaa');
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: darkviolet;
+    background: radial-gradient(#0a0942 10%, #34045c 30%, #052375 35%, #07bb67 51%, #052375 70%, #4c1e96 80%, darkviolet 90%);
+    animation: aurora 10s linear infinite;
+}
+
+@keyframes aurora {
+    0% {background-size: 100% 220%}
+    50% {background-size:  100% 160%}
+    100% {background-size:  100% 220%}
+    }
+
+a {
+    color: darkblue;
+}
+
+h2 {
+    color: antiquewhite;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 3rem;
+    margin: 1em;
+}
+
+#hex-container {
+    padding: 6rem;
+    border-radius: 50%;
+    min-width: 25vw;
+    max-width: 25vw;
+    margin-top: 5vh;
+    }
+#hex {
+    text-align: center;     
+    color: #53faac;
+    font-family: 'Averia Libre', cursive;
+    font-size: 4rem;
+    letter-spacing: 0.2rem;
+    }
+
+footer {
+    color: antiquewhite;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 0.9rem;
+    margin-top: 4em;
+    padding: 1rem;
+    text-align: center;
+    line-height: 1.2rem;
+}
