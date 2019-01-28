@@ -1,7 +1,4 @@
 
-@import url('https://fonts.googleapis.com/css?family=Averia+Libre|Comfortaa');
-
-
 body {
     display: flex;
     flex-direction: column;
@@ -9,6 +6,9 @@ body {
     justify-content: center;
     background-color: darkviolet;
     background: radial-gradient(#0a0942 10%, #34045c 30%, #052375 35%, #07bb67 51%, #052375 70%, #4c1e96 80%, darkviolet 90%);
+    background-size: 145vw 90vh;
+    background-position-x: center;
+    overflow-x: hidden;
    }
 
 @keyframes aurora {
@@ -23,19 +23,18 @@ a {
 
 h2 {
     color: #94ec85e3;
-    font-family: 'Comfortaa', sans-serif;
+    font-family: 'Text Me One', sans-serif;
+    letter-spacing: 0.1rem;
     font-size: 2rem;
     margin-top: 1rem;
 }
 
 #hex-container {
     display: flex;
-    justify-content: center;
-    align-content: center;
-    /* height: 80vh;
-    width: 70vw; */
-    padding: 50vh 50vw 50vh 50vw;
+    flex-direction: column;
+    padding: 30vh 30vw 60vh 30vw;
     border-radius: 50%;
+    width: 100vmax;
     background: -moz-radial-gradient(center, ellipse cover, rgba(38,28,147,0) 8%, rgba(38,28,147,0.35) 53%, rgba(64,237,150,0.42) 58%, rgba(63,34,170,0.74) 61%, rgba(123,16,165,0.95) 76%, rgba(123,16,165,1) 20%); 
     background: -webkit-radial-gradient(center, ellipse cover, rgba(38,28,147,0) 28%,rgba(38,28,147,0.35) 53%,rgba(64,237,150,0.42) 58%,rgba(63,34,170,0.74) 81%,rgba(123,16,165,0.95) 96%,rgba(123,16,165,1) 100%); 
     background: radial-gradient(ellipse at center cover, rgba(38,28,147,0) 28%,rgba(38,28,147,0.35) 53%,rgba(64,237,150,0.42) 58%,rgba(63,34,170,0.74) 81%,rgba(123,16,165,0.95) 96%,rgba(123,16,165,1) 100%);
@@ -43,23 +42,26 @@ h2 {
     }
 
 #hex {
-    width: 30vw;
+    margin: 0 auto;
+    width: 40vw;
     border-radius: 50%;
-    padding: 4rem;
+    padding: 6rem 3rem;
     text-align: center;     
     color: #54db71;
-    font-family: 'Averia Libre', cursive;
+    font-family: 'Averia Sans Libre', cursive;
     font-size: 4rem;
     letter-spacing: 0.2rem;
     }
 
-footer {
+#clock-footer {
+    bottom: 0.1vh;
+    position: fixed;
     width: 100vw;
     color: #85eccae3;
-    background-color: hsl(182, 47%, 28%, 0.8);
-    font-family: 'Comfortaa', sans-serif;
+    background-color: hsl(182, 47%, 28%, 0.4);
+    font-family: 'Trebuchet MS', sans-serif;
     font-size: 0.9rem;
-    margin-top: 2em;
+    margin: 3em auto 0.75vh auto;
     padding: 1rem;
     text-align: center;
     line-height: 1.2rem;
@@ -73,8 +75,9 @@ footer {
     }
 
     body {
-        background: radial-gradient(center, circle cover, #0a0942 10%, #34045c 30%, #052375 35%, #07bb67 51%, #8a3fb6 70%, #4c1e96 80%, darkviolet 90%);
-        background-size: 100vw;
+        background: radial-gradient(center, ellipse cover, #0a0942 10%, #34045c 30%, #052375 35%, #07bb67 51%, #8a3fb6 70%, #4c1e96 80%, darkviolet 90%);
+        background-size: 350vmin 100vmax;
+        background-position-x: center;
         padding: 1rem;
         overflow: hidden;
     }
@@ -84,10 +87,11 @@ footer {
         }
 
     #hex-container {
-        padding: 15vmax 30vmin 10vmax 30vmin; 
-        margin-top: 5vmax; 
-        margin-bottom: 5max;
-    }
+        padding: 15vmax 30vmin 15vmax 30vmin; 
+        margin-top: 5vmin; 
+        margin-bottom: 5vmin;
+        overflow: hidden;
+        }
     
     #hex {
         display: flex;
@@ -97,12 +101,15 @@ footer {
         width: 80vw;
         height: 20vh;
         font-size: 2.5rem;
+        padding: 15vw;
     }
     
-    footer {
+    #clock-footer {
+        left: 0;
+        bottom: 1vh;
+        position: fixed;
         font-size: 0.8rem;
         line-height: 1rem;
-        margin-bottom: 2vh;
-    }
+        }
 
   }
