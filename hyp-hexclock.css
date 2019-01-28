@@ -1,16 +1,15 @@
 
 @import url('https://fonts.googleapis.com/css?family=Averia+Libre|Comfortaa');
 
+
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
     background-color: darkviolet;
     background: radial-gradient(#0a0942 10%, #34045c 30%, #052375 35%, #07bb67 51%, #052375 70%, #4c1e96 80%, darkviolet 90%);
-    animation: aurora 10s linear infinite;
-}
+   }
 
 @keyframes aurora {
     0% {background-size: 100% 220%}
@@ -19,37 +18,91 @@ body {
     }
 
 a {
-    color: darkblue;
+    color: rgb(224, 127, 241);
 }
 
 h2 {
-    color: antiquewhite;
+    color: #94ec85e3;
     font-family: 'Comfortaa', sans-serif;
-    font-size: 3rem;
-    margin: 1em;
+    font-size: 2rem;
+    margin-top: 1rem;
 }
 
 #hex-container {
-    padding: 6rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    /* height: 80vh;
+    width: 70vw; */
+    padding: 50vh 50vw 50vh 50vw;
     border-radius: 50%;
-    min-width: 25vw;
-    max-width: 25vw;
-    margin-top: 5vh;
+    background: -moz-radial-gradient(center, ellipse cover, rgba(38,28,147,0) 8%, rgba(38,28,147,0.35) 53%, rgba(64,237,150,0.42) 58%, rgba(63,34,170,0.74) 61%, rgba(123,16,165,0.95) 76%, rgba(123,16,165,1) 20%); 
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(38,28,147,0) 28%,rgba(38,28,147,0.35) 53%,rgba(64,237,150,0.42) 58%,rgba(63,34,170,0.74) 81%,rgba(123,16,165,0.95) 96%,rgba(123,16,165,1) 100%); 
+    background: radial-gradient(ellipse at center cover, rgba(38,28,147,0) 28%,rgba(38,28,147,0.35) 53%,rgba(64,237,150,0.42) 58%,rgba(63,34,170,0.74) 81%,rgba(123,16,165,0.95) 96%,rgba(123,16,165,1) 100%);
+    animation: aurora 10s linear infinite;
     }
+
 #hex {
+    width: 30vw;
+    border-radius: 50%;
+    padding: 4rem;
     text-align: center;     
-    color: #53faac;
+    color: #54db71;
     font-family: 'Averia Libre', cursive;
     font-size: 4rem;
     letter-spacing: 0.2rem;
     }
 
 footer {
-    color: antiquewhite;
+    width: 100vw;
+    color: #85eccae3;
+    background-color: hsl(182, 47%, 28%, 0.8);
     font-family: 'Comfortaa', sans-serif;
     font-size: 0.9rem;
-    margin-top: 4em;
+    margin-top: 2em;
     padding: 1rem;
     text-align: center;
     line-height: 1.2rem;
 }
+
+/*------------------MEDIA QUERIES----------------------*/
+
+@media screen and (max-width: 500px) {
+    html {
+        font-size: 4vw;
+    }
+
+    body {
+        background: radial-gradient(center, circle cover, #0a0942 10%, #34045c 30%, #052375 35%, #07bb67 51%, #8a3fb6 70%, #4c1e96 80%, darkviolet 90%);
+        background-size: 100vw;
+        padding: 1rem;
+        overflow: hidden;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        }
+
+    #hex-container {
+        padding: 15vmax 30vmin 10vmax 30vmin; 
+        margin-top: 5vmax; 
+        margin-bottom: 5max;
+    }
+    
+    #hex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        width: 80vw;
+        height: 20vh;
+        font-size: 2.5rem;
+    }
+    
+    footer {
+        font-size: 0.8rem;
+        line-height: 1rem;
+        margin-bottom: 2vh;
+    }
+
+  }
