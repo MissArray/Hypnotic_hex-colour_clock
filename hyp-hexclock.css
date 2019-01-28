@@ -9,7 +9,9 @@ body {
     height: 100vh;
     background-color: darkviolet;
     background: radial-gradient(#0a0942 10%, #34045c 30%, #052375 35%, #07bb67 51%, #052375 70%, #4c1e96 80%, darkviolet 90%);
-    animation: aurora 10s linear infinite;
+   
+    
+    z-index: 1;
 }
 
 @keyframes aurora {
@@ -22,24 +24,27 @@ a {
     color: darkblue;
 }
 
-h2 {
+/* h2 {
     color: antiquewhite;
     font-family: 'Comfortaa', sans-serif;
     font-size: 3rem;
     margin: 1em;
-}
+} */
 
 #hex-container {
     display: flex;
     justify-content: center;
     align-content: center;
-    width: 600px;
-    padding: 4rem;
+    /* height: 80vh;
+    width: 70vw; */
+    padding: 25vw 60vw;
     border-radius: 50%;
     margin-top: 5vh;
-    background: -moz-radial-gradient(center, ellipse cover, rgba(38,28,147,0) 28%, rgba(38,28,147,0.35) 53%, rgba(64,237,150,0.42) 58%, rgba(63,34,170,0.74) 81%, rgba(123,16,165,0.95) 96%, rgba(123,16,165,1) 100%); 
+    background: -moz-radial-gradient(center, ellipse cover, rgba(38,28,147,0) 8%, rgba(38,28,147,0.35) 53%, rgba(64,237,150,0.42) 58%, rgba(63,34,170,0.74) 61%, rgba(123,16,165,0.95) 76%, rgba(123,16,165,1) 20%); 
     background: -webkit-radial-gradient(center, ellipse cover, rgba(38,28,147,0) 28%,rgba(38,28,147,0.35) 53%,rgba(64,237,150,0.42) 58%,rgba(63,34,170,0.74) 81%,rgba(123,16,165,0.95) 96%,rgba(123,16,165,1) 100%); 
     background: radial-gradient(ellipse at center, rgba(38,28,147,0) 28%,rgba(38,28,147,0.35) 53%,rgba(64,237,150,0.42) 58%,rgba(63,34,170,0.74) 81%,rgba(123,16,165,0.95) 96%,rgba(123,16,165,1) 100%);
+    z-index: 2;
+    animation: aurora 10s linear infinite;
     }
 
 #hex {
@@ -47,7 +52,7 @@ h2 {
     border-radius: 50%;
     padding: 4rem;
     text-align: center;     
-    color: #53faac;
+    color: #51d67d;
     font-family: 'Averia Libre', cursive;
     font-size: 4rem;
     letter-spacing: 0.2rem;
