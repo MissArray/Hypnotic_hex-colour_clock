@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css?family=Averia+Libre|Comfortaa');
+@import url('https://fonts.googleapis.com/css?family=Arima+Madurai|Averia+Libre|Comfortaa');
 
 body {
     display: flex;
@@ -19,37 +19,38 @@ body {
     }
 
 a {
-    color: darkblue;
+    color: rgb(160, 219, 236);
 }
 
 h2 {
-    color: antiquewhite;
-    font-family: 'Comfortaa', sans-serif;
+    color: #21303e;
+    font-family: 'Averia Libre', sans-serif;
     font-size: 3rem;
-    margin: 1em;
+    margin-bottom: 1em;
 }
 
 #hex-container {
-    padding: 6rem;
+    padding: 4rem;
     border-radius: 50%;
-    min-width: 25vw;
-    max-width: 25vw;
-    margin-top: 5vh;
-    }
+    width: 300px;
+     }
+     
 #hex {
     text-align: center;     
-    color: #53faac;
+    color: rgba(86, 230, 168, 0.986);
     font-family: 'Averia Libre', cursive;
     font-size: 4rem;
     letter-spacing: 0.2rem;
     }
 
 footer {
-    color: antiquewhite;
-    font-family: 'Comfortaa', sans-serif;
+    color: #c0e8d5;
+    background-color: hsla(137.5, 45.5%, 28%, 0.5);
+    font-family: 'Arima Madurai', cursive;
     font-size: 0.9rem;
-    margin-top: 4em;
-    padding: 1rem;
+    width: 100vw;
+    margin: 4em 0 0 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     text-align: center;
-    line-height: 1.2rem;
-}
+    }
