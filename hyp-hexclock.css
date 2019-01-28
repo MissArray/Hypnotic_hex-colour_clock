@@ -30,13 +30,22 @@ h2 {
 }
 
 #hex-container {
-    padding: 6rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 600px;
+    padding: 4rem;
     border-radius: 50%;
-    min-width: 25vw;
-    max-width: 25vw;
     margin-top: 5vh;
+    background: -moz-radial-gradient(center, ellipse cover, rgba(38,28,147,0) 28%, rgba(38,28,147,0.35) 53%, rgba(64,237,150,0.42) 58%, rgba(63,34,170,0.74) 81%, rgba(123,16,165,0.95) 96%, rgba(123,16,165,1) 100%); 
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(38,28,147,0) 28%,rgba(38,28,147,0.35) 53%,rgba(64,237,150,0.42) 58%,rgba(63,34,170,0.74) 81%,rgba(123,16,165,0.95) 96%,rgba(123,16,165,1) 100%); 
+    background: radial-gradient(ellipse at center, rgba(38,28,147,0) 28%,rgba(38,28,147,0.35) 53%,rgba(64,237,150,0.42) 58%,rgba(63,34,170,0.74) 81%,rgba(123,16,165,0.95) 96%,rgba(123,16,165,1) 100%);
     }
+
 #hex {
+    width: 400px;
+    border-radius: 50%;
+    padding: 4rem;
     text-align: center;     
     color: #53faac;
     font-family: 'Averia Libre', cursive;
