@@ -5,6 +5,8 @@ body {
     align-items: center;
     justify-content: center;
     background-color: darkviolet;
+    background: -moz-radial-gradient(#0a0942 10%, #34045c 30%, #052375 35%, #07bb67 51%, #052375 70%, #4c1e96 80%, darkviolet 90%);
+    background: -webkit-radial-gradient(#0a0942 10%, #34045c 30%, #052375 35%, #07bb67 51%, #052375 70%, #4c1e96 80%, darkviolet 90%);
     background: radial-gradient(#0a0942 10%, #34045c 30%, #052375 35%, #07bb67 51%, #052375 70%, #4c1e96 80%, darkviolet 90%);
     background-size: 145vw 90vh;
     background-position-x: center;
@@ -75,6 +77,8 @@ h2 {
     }
 
     body {
+        background: -moz-radial-gradient(center, ellipse cover, #0a0942 10%, #34045c 30%, #052375 35%, #07bb67 51%, #8a3fb6 70%, #4c1e96 80%, darkviolet 90%);
+        background: -webkit-radial-gradient(center, ellipse cover, #0a0942 10%, #34045c 30%, #052375 35%, #07bb67 51%, #8a3fb6 70%, #4c1e96 80%, darkviolet 90%);
         background: radial-gradient(center, ellipse cover, #0a0942 10%, #34045c 30%, #052375 35%, #07bb67 51%, #8a3fb6 70%, #4c1e96 80%, darkviolet 90%);
         background-size: 350vmin 100vmax;
         background-position-x: center;
